@@ -1,20 +1,45 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="danger">
     <ion-title>
-      Blank
+      Inicio
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="padding" fullscreen>
+  <ion-card >
+    <img style="border-radius:5px;" width="w-100" src="https://resizer.glanacion.com/resizer/7bJx01UR9BUbZM5sdsPLH4hCJ3c=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/QS3KNYFVIFHPJLNBGX45PZCZSM.jpg" alt="">
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    <ion-card-header>
+      <ion-card-title>¡Biblioteca</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      ¡Biblioteca es una aplicacion en donde podras buscar la informacion de diferentes libros y sus autores. Si desdea buscar algun libro puede ingresar a la biblioteca pulsando en el siguiente boton:
+    </ion-card-content>
+    <ion-item> 
+      <ion-icon name="school-outline" slot="start"></ion-icon>
+      <ion-buttons>
+        <ion-button routerLink="/biblioteca">Acceder a ¡Biblioteca</ion-button>
+      </ion-buttons>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <img style="border-radius:5px;" width="w-100" src="https://micarrerauniversitaria.com/wp-content/uploads/2018/03/escritor-9.jpg" alt="">
+    <ion-card-header>
+      <ion-card-title>Informacion sobre el autor</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Si desea conocer más informacion sobre el autor de los libros, puede hacerlo pulsando el boton:
+    </ion-card-content>
+    <ion-item> 
+      <ion-icon name="person-outline" slot="start"></ion-icon>
+      <ion-buttons>
+        <ion-button routerLink="/autor">consultar información</ion-button>
+      </ion-buttons>
+    </ion-item>
+  </ion-card>
+  
 </ion-content>

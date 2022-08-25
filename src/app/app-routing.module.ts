@@ -11,6 +11,23 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'biblioteca',
+    loadChildren: () => import('./biblioteca/biblioteca.module').then( m => m.BibliotecaPageModule)
+  },
+  {
+    path: 'autor',
+    children:[
+      {
+        path:'',
+        loadChildren: () => import('./autor/autor.module').then( m => m.AutorPageModule)
+      },
+      {
+        path:'curriculum',
+        loadChildren: () => import('./autor/curriculum/curriculum.module').then( m => m.CurriculumPageModule)
+      },
+    ]
+  },
 ];
 
 @NgModule({
